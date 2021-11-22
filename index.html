@@ -4,24 +4,33 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="css/style.css">
+
 	<title>Texto a voz con JS | Parzibyte.me</title>
 </head>
 
 <body>
-	<h1>Texto a voz con JS</h1>
-	<p>
-		<a href="//parzibyte.me/blog" target="_blank">By Parzibyte</a>
-	</p>
-	<label for="voces">Selecciona la voz:</label>
-    <br>
-   <select id="voces">
-		</select>
-		<br>
-		<br>
-		Escribe tu mensaje:<br>
-		<textarea id="mensaje" cols="30" rows="5"></textarea>
-		<br><br>
-		<button id="btnEscuchar">Escuchar</button>
+	<header class="header">
+		<h1>Texto a voz con JS</h1>
+		<p>
+			<a href="//parzibyte.me/blog" target="_blank">By Parzibyte</a>
+		</p>
+	</header>
+	<main class="contenedor">
+		<div class="contenedor__seleccion">
+			<label for="voces">Selecciona la voz:</label>
+			<select id="voces"></select>
+		</div>
+		<div class="contenedor__seleccion">
+			<div class="elementos__edicion">	
+				<p>Escribe tu mensaje:</p>
+				<textarea class="seleccion__textArea" id="mensaje" cols="30" rows="5"></textarea>
+			</div>
+			<div class="botton--escuchar contenedor__boton">
+				<button id="btnEscuchar">Escuchar</button>
+			</div>
+		</div>
+	</main>
     <script src="script.js"></script>
   </body>
 </html>

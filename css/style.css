@@ -1,0 +1,38 @@
+.seleccion__textArea{
+    background-color: antiquewhite;
+    /* resize: vertical;     */
+    resize: none;
+    min-height: 300px;
+    min-width: 50%;
+    padding: 1.5rem;
+}
+.contenedor{
+    border-top: aliceblue;
+    border-style: groove none none none;
+    padding-top: 1rem;
+}
+.header{
+    text-align: center;
+}
+.elementos__edicion{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    /* justify-content: center; */
+    padding: 1rem;
+    gap: 2rem;
+    background-color: rgb(255, 255, 255);
+}
+.contenedor__boton{
+    display: flex;
+    padding-top: 2rem;
+    justify-content: center;
+}
+
+@media (min-width: 768px) {
+    .seleccion__textArea{
+        background-color: rgb(165, 165, 165);
+        min-width: 20%;
+        resize: none;
+    }
+}
